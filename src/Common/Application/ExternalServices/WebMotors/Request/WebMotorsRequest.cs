@@ -2,9 +2,8 @@ namespace Application.ExternalServices.WebMotors.Request
 {
     public class WebMotorsRequest
     {
-        public string MakeId { get; set; }
-        public double ModelId { get; set; }
-        public double Lon { get; set; }
-        public int Id { get; set; }
+        public int? MakeId { get; set; }
+        public int? ModelId { get; set; }
+        public int? Page { get; set; }
     }
 }

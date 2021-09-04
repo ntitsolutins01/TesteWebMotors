@@ -13,7 +13,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [Authorize]
     public class SubjectController : BaseApiController
     {
         [HttpGet]

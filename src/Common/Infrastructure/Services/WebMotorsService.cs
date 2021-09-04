@@ -28,8 +28,7 @@ namespace Infrastructure.Services
 
         public async Task<ServiceResult<WebMotorsResponse>> GetWebmotors(WebMotorsRequest request, CancellationToken cancellationToken)
         {
-            return await _httpClient.GenericRequest<WebMotorsRequest, WebMotorsResponse>(ClientApi, string.Concat("Model", StringExtensions
-                .ParseObjectToQueryString(request, true)), cancellationToken, MethodType.Get, request);
+            return await _httpClient.GenericRequest<WebMotorsRequest, WebMotorsResponse>(ClientApi, string.Concat("Model", StringExtensions.ParseObjectToQueryString(request, true)), cancellationToken, MethodType.Get, request);
         }
     }
 }
